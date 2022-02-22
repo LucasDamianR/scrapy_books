@@ -2,7 +2,7 @@
 <i>A Basic Spider to deploy in Scrapy Cloud</i>
 
 
-The following project is a challenge requested from [Zyte](https://www.zyte.com/)
+The following project is a challenge requested by [Zyte](https://www.zyte.com/)
 
 <h2>Installation</h2>
 
