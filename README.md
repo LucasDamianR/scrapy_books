@@ -31,7 +31,7 @@ uncomment in <code>settings.py</code> <code>ITEM_PIPELINES</code></br>
 run in your shell with parameter -o (output file: <code>.json</code>, <code>.csv</code>, <code>.xml</code>)
 <pre><code>scrapy crawl books -o books.json</code></pre>
 
-In this example the output like</br>
+output for this example:</br>
 <img src='https://i.ibb.co/YBxV3nG/Whats-App-Image-2022-02-21-at-11-21-58-PM.jpg' />
 
 </br>
