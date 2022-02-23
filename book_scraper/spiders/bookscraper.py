@@ -14,8 +14,8 @@ class BookSpider(scrapy.Spider):
 
             item['title'] = product.css('a > img').attrib['alt']
             item['price'] = float(product.css('.price_color::text').get().replace('£',''))
-            item['image_url'] = self.start_urls[0] + product.css('a > img').attrib['src']
-            detail_aux = self.start_urls[0] + product.css('a').attrib['href']
+            item['image_url'] = response.urljoin(product.css('a > img').attrib['src'])
+            detail_aux = response.urljoin(product.css('a').attrib['href'])
             #check if the url is correct
             if detail_aux.find('catalogue') == -1:
                 detail_aux = self.start_urls[0] +'catalogue/'+ product.css('a').attrib['href']
